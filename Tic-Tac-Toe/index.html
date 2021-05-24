@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+
+  <style>
+    .column{
+      height: 100px;
+      width: 100px;
+      font-size: 50pt;
+      text-align: center;
+    }
+  </style>
+
+
+
+  </head>
+  <body onload="gameStart()">
+    <h1>TIC-TAC-TOE</h1>
+    <table id="gameBoard" border = "1" >
+      <tr id="row-1">
+        <td id="row-0-col-0" class="column" onClick="playerMove(this)"></td>
+        <td id="row-0-col-1" class="column" onClick="playerMove(this)"></td>
+        <td id="row-0-col-2" class="column" onClick="playerMove(this)"></td>
+      </tr>
+      <tr id="row-2">
+        <td id="row-1-col-0" class="column" onClick="playerMove(this)"></td>
+        <td id="row-1-col-1" class="column" onClick="playerMove(this)"></td>
+        <td id="row-1-col-2" class="column" onClick="playerMove(this)"></td>
+      </tr>
+      <tr id="row-3">
+        <td id="row-2-col-0" class="column" onClick="playerMove(this)"></td>
+        <td id="row-2-col-1" class="column" onClick="playerMove(this)"></td>
+        <td id="row-2-col-2" class="column" onClick="playerMove(this)"></td>
+      </tr>
+    </table>
+
+
+    <script src="app.js"></script>
+  </body>
